@@ -80,9 +80,8 @@ class GameBoard {
                 }else if (this.turns % 2 === 1 && typeGame === "CPU"){
                     this.printPieceOnBoard(i,rowIndex,"playerRed");
                     this.printTurns("red");
-                    this.playCPU();
+                    setTimeout(this.playCPU.bind(this), 400);
                 } 
-    
             })
         }
     }
